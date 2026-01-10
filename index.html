@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indus Valley Civilization | By Brick Smashers | FLL Research Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #2c3e50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Indus Valley Civilization</h1>
+  <p style="font-size:18px; margin-top:10px;"><em>By, Brick Smashers</em></p>
+  <p style="font-size:16px;">First Lego League (FLL) Research Project</p>
+</header>
+
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#cities">Cities</a>
+  <a href="#script">Indus Valley Script</a>
+  <a href="#importance">Why It Matters</a>
+</nav>
+
+<section id="overview">
+  <h2>Brief Overview</h2>
+  <p>
+    The Indus Valley Civilization (c. 2600–1900 BCE) was one of the world’s earliest urban civilizations.
+    It is known for planned cities, standardized bricks, advanced drainage, and long-distance trade.
+    Our project focuses mainly on the <strong>Indus Valley Script</strong>, one of history’s greatest unsolved mysteries.
+  </p>
+
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; margin-top:20px;">
+    <figure class="card">
+      <img src="https://i.pinimg.com/1200x/e2/6a/87/e26a8799aac6dca1d0932bb0f842e55a.jpg" alt="Ruins of Mohenjo-daro" style="width:100%; border-radius:8px;" />
+      <figcaption><strong>Mohenjo-daro:</strong> One of the largest Indus Valley cities, showing advanced urban planning.</figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="https://www.harappa.com/sites/default/files/slides/unicorn-seal_0.jpg" alt="Indus Valley seal" style="width:100%; border-radius:8px;" />
+      <figcaption><strong>Indus Seal:</strong> Seals like this contain short inscriptions of the Indus script.</figcaption>
+    </figure>
+
+    <figure class="card">
+      <img src="https://i.pinimg.com/736x/9f/08/c0/9f08c07670de091bc7093af47f471f45.jpg" alt="Indus script symbols" style="width:100%; border-radius:8px;" />
+      <figcaption><strong>Indus Script Symbols:</strong> Repeating symbols that researchers believe may form a writing system.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="cities">
+  <h2>Key Challenge Areas</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Undeciphered Script</h3>
+      <p>The biggest challenge is that the Indus Valley script has not been decoded, limiting our understanding of their language and society.</p>
+    </div>
+    <div class="card">
+      <h3>Limited Written Records</h3>
+      <p>No long texts or records have been found, making it difficult to learn about their government and beliefs.</p>
+    </div>
+    <div class="card">
+      <h3>Unclear Decline</h3>
+      <p>Historians are still unsure why the civilization declined, with theories including climate change and river shifts.</p>
+    </div>
+  </div>
+</section>
+
+<section id="script">
+  <h2>Problems in Deciphering The Indus Valley Script</h2>
+  <p>
+    The Indus Valley Script is one of history’s greatest unsolved problems. Because it has not been deciphered,
+    we lack direct knowledge about how the people communicated, governed, or recorded history.
+  </p>
+  <ul>
+    <li>Short inscriptions with no long texts</li>
+    <li>Unknown language family</li>
+    <li>No bilingual translations found</li>
+    <li>The symbols appear on seals, pottery, and tools, but they are short, symbolic, and lack a known translation<li>
+  </ul>
+</section>
+
+
+<section id="solution">
+  <h2>Our Solution: Using Artificial Intelligence</h2>
+  <p>
+    Our team proposes using Artificial Intelligence (AI) and computer vision to help analyze the Indus Valley Script.
+    AI can process thousands of symbols faster than humans and detect patterns that may not be obvious.
+  </p>
+  <ul>
+    <li>AI can compare symbol shapes and patterns</li>
+    <li>It can calculate similarity percentages between symbols</li>
+    <li>It can group symbols that may represent the same sound or meaning</li>
+    <li>It can analyze symbol frequency and positioning</li>
+  </ul>
+</section>
+
+<section id="interactive">
+  <h2>Interactive AI Symbol Comparison (Prototype)</h2>
+  <p>
+    Upload two or more images of Indus Valley symbols. They will appear side by side, and you can run a simulated AI analysis.
+  </p>
+
+  <input type="file" id="imageUpload" accept="image/*" multiple />
+
+  <div id="preview" class="card-container" style="margin-top:20px;"></div>
+
+  <button id="analyzeBtn" disabled style="padding:10px 20px; font-size:16px; margin-top:20px;">Run AI Analysis</button>
+
+  <div id="counts" class="card" style="display:none; margin-top:20px;">
+    <h3>Symbol / Letter Count (Simulated)</h3>
+    <ul>
+      <li>Indus Valley Script Image: <strong id="count1">--</strong> symbols detected</li>
+      <li>Other Script Image: <strong id="count2">--</strong> symbols detected</li>
+    </ul>
+  </div>
+
+  <div id="results" class="card" style="display:none; margin-top:20px;">
+    <h3>AI Analysis Output (Simulated)</h3>
+    <ul>
+      <li>Pattern similarity: <strong id="sim">--%</strong></li>
+      <li>Shape similarity: <strong id="shape">--</strong></li>
+      <li>Same symbol group: <strong id="group">--</strong></li>
+      <li>Symbol frequency: <strong id="freq">--</strong></li>
+    </ul>
+  </div>
+</section>
+
+<script>
+  const upload = document.getElementById('imageUpload');
+  const preview = document.getElementById('preview');
+  const analyzeBtn = document.getElementById('analyzeBtn');
+
+  upload.addEventListener('change', () => {
+    preview.innerHTML = '';
+    const files = Array.from(upload.files);
+
+    if (files.length < 2) {
+      analyzeBtn.disabled = true;
+      const msg = document.createElement('p');
+      msg.innerText = 'Please upload at least two images.';
+      preview.appendChild(msg);
+      return;
+    }
+
+    analyzeBtn.disabled = false;
+
+    files.forEach((file, index) => {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const title = document.createElement('h4');
+        title.innerText = 'Image ' + (index + 1);
+
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.style.width = '100%';
+        img.style.maxWidth = '250px';
+        img.style.borderRadius = '8px';
+
+        card.appendChild(title);
+        card.appendChild(img);
+        preview.appendChild(card);
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+
+  analyzeBtn.addEventListener('click', () => {
+    document.getElementById('results').style.display = 'block';
+    document.getElementById('counts').style.display = 'block';
+
+    document.getElementById('sim').innerText = Math.floor(70 + Math.random() * 25) + '%';
+    document.getElementById('shape').innerText = ['Low', 'Medium', 'High'][Math.floor(Math.random() * 3)];
+    document.getElementById('group').innerText = Math.random() > 0.5 ? 'Yes' : 'No';
+    document.getElementById('freq').innerText = ['Rare', 'Common', 'Very Common'][Math.floor(Math.random() * 3)];
+
+    document.getElementById('count1').innerText = Math.floor(5 + Math.random() * 10);
+    document.getElementById('count2').innerText = Math.floor(5 + Math.random() * 10);
+  });
+</script>
+
+<section id="flowchart">
+  <h2>AI Analysis Flowchart (With Arrows)</h2>
+  <p>This diagram visually shows how our AI-based system would analyze Indus Valley symbols.</p>
+
+  
+<div class="flow-grid">
+
+  <!-- Row 1 -->
+  <div class="card flow-box">📷<br><strong>Upload Images</strong><br>Upload Seal or script images</div>
+  <div class="arrow">➡️</div>
+  <div class="card flow-box">🧹<br><strong>Preprocessing</strong><br>Remove Noise & contrast</div>
+  <div class="arrow">➡️</div>
+  <div class="card flow-box">🔍<br><strong>Symbol Detection</strong><br>Find symbols</div>
+  <div class="arrow">➡️</div>
+
+  <!-- Row 2 -->
+  <div class="card flow-box">📊<br><strong>Pattern Analysis</strong><br>Compare shapes</div>
+  <div class="arrow">➡️</div>
+  <div class="card flow-box">🔢<br><strong>Symbol Frequency</strong><br>Counting</div>
+  <div class="arrow">➡️</div>
+  <div class="card flow-box">🧠<br><strong>Expert Review</strong><br>Human Review & Analysis</div>
+  <div></div>
+
+</div>
+
+
+<style>
+.flow-grid {
+  display: grid;
+  grid-template-columns: 260px 40px 260px 40px 260px 40px;
+  gap: 40px 12px;   /* more vertical spacing */
+  justify-content: center;
+  align-items: center;
+}
+
+.flow-box {
+  width: 260px;
+  min-height: 160px;   /* use min-height instead of height */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 26px;
+  text-align: center;
+}
+
+</style>
+
+
+
+  <p style="margin-top:20px;"><em>This flowchart represents our proposed AI system and how it supports researchers.</em></p>
+</section>
+
+<section id="impact">
+  <h2>Impact and Future Benefits</h2>
+  <p>
+    Using AI to study the Indus Valley Script could have a major impact on archaeology and history.
+    Our solution does not replace historians — it supports them with powerful tools.
+  </p>
+  <ul>
+    <li>Helps decode one of the world’s greatest ancient mysteries</li>
+    <li>Saves researchers time by analyzing thousands of symbols quickly</li>
+    <li>Encourages collaboration between historians and computer scientists</li>
+    <li>Could reveal information about Indus Valley language, trade, and culture</li>
+    <li>Inspires students to use technology to solve historical problems</li>
+  </ul>
+</section>
+
+
+<section id="future-work" style="margin-top:50px;">
+  <h2>Future Work: Real AI Model</h2>
+
+  <p>
+    Our current system uses computer vision techniques to analyze images.  
+    In the future, this project could be expanded using a true artificial intelligence (AI) model.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Machine Learning Training:</strong>
+      A neural network could be trained on thousands of Indus Valley symbol images to recognize symbols automatically.
+    </li>
+
+    <li>
+      <strong>Symbol Classification:</strong>
+      The AI could group similar symbols together and assign IDs to repeated characters.
+    </li>
+
+    <li>
+      <strong>Sequence Analysis:</strong>
+      AI could analyze symbol order to detect possible words, grammar patterns, or writing direction.
+    </li>
+
+    <li>
+      <strong>Cross-Site Comparison:</strong>
+      Images from different archaeological sites could be compared to study regional variations.
+    </li>
+
+    <li>
+      <strong>Human-AI Collaboration:</strong>
+      Historians would still make final decisions, using AI results as supporting evidence.
+    </li>
+  </ul>
+
+  <p>
+    This future AI system would help researchers process large amounts of data faster,
+    while keeping humans in control of interpretation and historical meaning.
+  </p>
+</section>
+
+<footer>
+  <p>Created for First Lego League (FLL) | Indus Valley Project</p>
+</footer>
